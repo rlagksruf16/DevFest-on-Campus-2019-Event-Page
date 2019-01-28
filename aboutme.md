@@ -14,5 +14,5 @@ What else do you need?
 
 ### my history
 
-- [movie web]("http://ec2-54-180-105-189.ap-northeast-2.compute.amazonaws.com/")
-- [stock info]("https://store.whale.naver.com/detail/onfnhemhancngkbgdffipihfgdlodfck")
+- [Movie web](http://ec2-54-180-105-189.ap-northeast-2.compute.amazonaws.com/)
+- [Stock info](https://store.whale.naver.com/detail/onfnhemhancngkbgdffipihfgdlodfck)
