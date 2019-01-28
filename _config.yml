@@ -72,8 +72,8 @@ author:
 social-network-links:
   rss: true
   email: "qkwl4678@gmail.com"
-#  facebook: 
   github: bengHak
+  facebook: 
 #  twitter: 
 #  reddit: yourname
 #  google-plus: +DeanAttali
@@ -98,7 +98,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "benghak.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
@@ -123,10 +123,10 @@ url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 # --- Comments --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-# disqus: ""
+disqus: "byeonghak ko"
 
 # To use Facebook Comments, fill in a Facebook App ID
-fb_comment_id: "100002603361069"
+# fb_comment_id: ""
 
 # Staticman support
 staticman:
