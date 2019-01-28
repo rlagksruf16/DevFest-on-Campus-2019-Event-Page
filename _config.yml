@@ -92,7 +92,7 @@ social-network-links:
 # Select which share links to show in posts
 share-links-active:
   twitter: false
-  facebook: false
+  facebook: true
   google: false
   linkedin: true
 
@@ -126,7 +126,7 @@ url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 # disqus: ""
 
 # To use Facebook Comments, fill in a Facebook App ID
-# fb_comment_id: ""
+fb_comment_id: "100002603361069"
 
 # Staticman support
 staticman:
@@ -159,7 +159,7 @@ timezone: "America/Vancouver"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
-paginate: 5
+paginate: 10
 
 kramdown:
   input: GFM

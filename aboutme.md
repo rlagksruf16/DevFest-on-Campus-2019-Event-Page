@@ -12,7 +12,7 @@ I have the following qualities:
 
 What else do you need?
 
-### my history
+### Portfolio
 
 - [Movie web](http://ec2-54-180-105-189.ap-northeast-2.compute.amazonaws.com/)
 - [Stock info](https://store.whale.naver.com/detail/onfnhemhancngkbgdffipihfgdlodfck)
