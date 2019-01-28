@@ -73,7 +73,7 @@ social-network-links:
   rss: true
   email: "qkwl4678@gmail.com"
   github: bengHak
-  facebook: 
+#  facebook: 
 #  twitter: 
 #  reddit: yourname
 #  google-plus: +DeanAttali
@@ -92,9 +92,9 @@ social-network-links:
 # Select which share links to show in posts
 share-links-active:
   twitter: false
-  facebook: true
+  facebook: false
   google: false
-  linkedin: true
+  linkedin: false
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
@@ -123,7 +123,7 @@ url-pretty: "benghak.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 # --- Comments --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-disqus: "byeonghak ko"
+ disqus: "byeonghak ko"
 
 # To use Facebook Comments, fill in a Facebook App ID
 # fb_comment_id: ""
@@ -155,7 +155,7 @@ title-separator: "-"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "Asia/Seoul"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
