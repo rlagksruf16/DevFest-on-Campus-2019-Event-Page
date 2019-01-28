@@ -4,8 +4,8 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (https://username.github.io) then use these settings:
-url: "https://benghak.github.io"
-baseurl: ""
+url: https://benghak.github.io
+baseurl: /
 
 # If you are building a GitHub project page then use these settings:
 #url: "http://username.github.io/projectname"
@@ -123,7 +123,8 @@ url-pretty: "benghak.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 # --- Comments --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-  disqus: "benghak-github-io-1"
+disqus: True
+disqus_shortname: "benghak-github-io-1"
 
 # To use Facebook Comments, fill in a Facebook App ID
 # fb_comment_id: ""
