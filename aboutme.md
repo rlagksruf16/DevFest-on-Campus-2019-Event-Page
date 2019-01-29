@@ -4,8 +4,7 @@ title: About me
 subtitle: 
 ---
 
-My name is Byeonghak Ko.
-
+### My name is Byeonghak Ko  
 I have the following qualities:
 - C / C++ / Python / Javascript
 - React / Django  
