@@ -2,11 +2,13 @@
 layout: post
 title: Docker에서 Anaconda 가상환경에 tensorflow, tensorflow-gpu 설치하기
 subtitle: 
-tags: [develop]
+tags: [develop, docker, anaconda, tensorflow, ubuntu]
 comments: true
 ---
 
 Docker 새롭게 머신러닝 환경을 세팅하는데 나와 같은 고생을 하지 않기를 바라면서 글을 작성합니다.  
+
+### Docker 환경 : ubuntu 14.04
 
 ## Anaconda 가상환경 설치
 
