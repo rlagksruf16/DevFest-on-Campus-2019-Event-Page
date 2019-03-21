@@ -57,7 +57,22 @@ source ~/.bashrc
 source activate [가상환경이름]
 ```
 
+## 가상환경 삭제
+
+```
+conda remove --name [가상환경명] --all
+```
+
+## 아나콘다 clean
+인덱스 캐시, 잠긴 파일, 소스캐시 등을 삭제할 수 있습니다.
+```
+conda clean --all
+//or
+conda clean -a
+```
+
 잘못된 부분이 있다면 언제든 댓글 혹은 이메일로 피드백 해주시면 빠르게 수정하겠습니다.
 
-[참조 링크]:https://ufris.tistory.com/5
-[참조 링크]:https://goodtogreate.tistory.com/entry/TensorFlow-GPU-%EB%B2%84%EC%A0%84-%EC%9A%B0%EB%B6%84%ED%88%AC-1604%EC%97%90-%EC%84%A4%EC%B9%98-%ED%95%98%EA%B8%B0
+참조 링크 1: https://ufris.tistory.com/5  
+참조 링크 2: https://niceman.tistory.com/86?category=940952  
+참조 링크 3: https://goodtogreate.tistory.com/entry/TensorFlow-GPU-%EB%B2%84%EC%A0%84-%EC%9A%B0%EB%B6%84%ED%88%AC-1604%EC%97%90-%EC%84%A4%EC%B9%98-%ED%95%98%EA%B8%B0  
