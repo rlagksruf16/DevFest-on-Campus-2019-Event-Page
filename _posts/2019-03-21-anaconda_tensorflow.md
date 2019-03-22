@@ -8,7 +8,8 @@ comments: true
 
 Docker 우분투 컨테이너 위에서 새롭게 머신러닝 환경을 세팅하는데 나와 같은 고생을 하지 않기를 바라면서 글을 작성합니다.  
 
-### Docker 환경 : ubuntu 14.04
+### Docker 환경 : ubuntu 14.04  
+### 파이썬 버전 : 3.6
 
 ## Anaconda 가상환경 설치
 
@@ -71,6 +72,18 @@ conda remove --name [가상환경명] --all
 conda clean --all
 //or
 conda clean -a
+```
+
+## CUDA 삭제
+```
+// 간단한 방법 
+sudo apt-get remove --auto-remove nvidia-cuda-toolkit
+// 좀 더 깨끗하게 
+sudo apt-get --purge remove 'cuda*' 
+sudo apt-get autoremove --purge 'cuda*' 
+
+sudo rm -rf /usr/local/cuda-[your version] 
+sudo rm -rf /usr/local/cuda
 ```
 
 잘못된 부분이 있다면 언제든 댓글 혹은 이메일로 피드백 해주시면 빠르게 수정하겠습니다.
