@@ -74,7 +74,8 @@ conda clean --all
 conda clean -a
 ```
 
-## CUDA 삭제
+## CUDA 삭제할 때
+삭제할 때 아래와 같이 진행하시면 됩니다.
 ```
 // 간단한 방법 
 sudo apt-get remove --auto-remove nvidia-cuda-toolkit
