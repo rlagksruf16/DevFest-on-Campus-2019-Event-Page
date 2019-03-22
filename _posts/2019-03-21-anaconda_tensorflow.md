@@ -46,27 +46,38 @@ conda update conda
 <hr>
 
 ## 가상환경 만들기
+
+### 가상환경 생성
 ```
-//가상환경 생성
 //cpu 
 conda create --name [가상환경이름] python=3.X(원하는 버전) tensorflow
 //gpu 
 conda create --name [가상환경이름] python=3.X(원하는 버전) tensorflow-gpu
+```
 
-//위 둘 중 하나를 한 후
+### gpu 선택시 해줘야할 것
+```
+//아래 문구를  ~/.bashrc 마지막에 입력
+export CUDA_VISIBLE_DEVICES=''
+
+// .bashrc 수정 후
 source ~/.bashrc
+```
 
+```
 //가상환경 실행
 source activate [가상환경이름]
 ```
+### 여기까지 하시면 세팅은 완료됩니다.
 
-## 가상환경 삭제
+
+## 가상환경 삭제 (필요시)
 
 ```
 conda remove --name [가상환경명] --all
 ```
 
-## 아나콘다 clean
+## 아나콘다 clean (필요시)
 인덱스 캐시, 잠긴 파일, 소스캐시 등을 삭제할 수 있습니다.
 ```
 conda clean --all
@@ -74,7 +85,7 @@ conda clean --all
 conda clean -a
 ```
 
-## CUDA 삭제할 때
+## CUDA 삭제 (필요시)
 삭제할 때 아래와 같이 진행하시면 됩니다.
 ```
 // 간단한 방법 
