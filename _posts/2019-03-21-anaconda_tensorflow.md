@@ -69,6 +69,8 @@ source ~/.bashrc
 source activate [가상환경이름]
 ```
 ### 여기까지 하시면 세팅은 완료됩니다.
+<hr>
+<br><br><br>
 
 
 ## 가상환경 삭제 (필요시)
