@@ -4,62 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- 합쳐지고 최소화된 최신 CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <!-- 부가적인 테마 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="scripts/getData.js"></script>
     <title>2019DevFest</title>
 </head>
 <body>
+    <div class="container">
+        <h1 class="text-center">DevFest 2019</h1>
+        <div id="main-container" class="container text-center">
+        </div>
+    </div>
     <script>
         var data;
         getSheetValues().then( x => {
             data = x;
-            console.log(data.values);
             let attendences = data.values;
+            let row;
             for(let i=1; i<attendences.length; i++){
-                console.log(attendences[i])
-                
-                var container = documnet.createElement
+                if(i % 3 == 1){
+                    row = document.createElement("div");
+                    row.className = "row";
+                    row.style = "margin: auto;"
+                }
+                var container = document.createElement("div");
+                container.className = "card col-md-3";
+                container.style = "margin: 15px auto;";
+
+                var container_body = document.createElement("div");
+                container_body.className = "card-body";
 
                 //이름
-                var box = document.createElement("div");
+                var box = document.createElement("h5");
+                box.className = "card-title";
                 var text = document.createTextNode(attendences[i][1]);
                 box.append(text);
-                document.body.appendChild(box);
+                //box.style = "display: block; float: left;";
+                //<img src="img/25231.svg" width="30px" height="30px"/>
+                //if(attendences[i][5])
+                if(attendences[i][7] != undefined){
+                    var hyperlink = document.createElement("a");
+                    hyperlink.href = attendences[i][7];
+                    hyperlink.target = "_blank"
+                    var img = document.createElement("img");
+                    img.src = "img/25231.svg"
+                    img.height = 20;
+                    img.width = 20;
+                    img.style = "margin-top: 0; margin-bottom: 10px;"
+                }
+                container_body.appendChild(box);
+
+                if(attendences[i][7] != undefined){
+                    hyperlink.appendChild(img);
+                    container_body.appendChild(hyperlink);
+                }
+
+                //세션 내용들
+                var session_list = document.createElement("ul");
+                session_list.className = "list-group list-group-flush"
+                session_list.style = ""
 
                 //1번째 세션
-                var box = document.createElement("div");
+                var box = document.createElement("li");
+                box.className = "list-group-item"
                 var text = document.createTextNode(attendences[i][2]);
                 box.append(text);
-                document.body.appendChild(box);
+                session_list.appendChild(box);
 
                 //2번째 세션
-                var box = document.createElement("div");
+                var box = document.createElement("li");
+                box.className = "list-group-item"
                 var text = document.createTextNode(attendences[i][3]);
                 box.append(text);
-                document.body.appendChild(box);
+                session_list.appendChild(box);
 
                 //3번째 세션
-                var box = document.createElement("div");
+                var box = document.createElement("li");
+                box.className = "list-group-item"
                 var text = document.createTextNode(attendences[i][4]);
                 box.append(text);
-                document.body.appendChild(box);
+                session_list.appendChild(box);
 
                 //4번째 세션
-                var box = document.createElement("div");
+                var box = document.createElement("li");
+                box.className = "list-group-item"
                 var text = document.createTextNode(attendences[i][5]);
                 box.append(text);
-                document.body.appendChild(box);
+                session_list.appendChild(box);
 
                 //5번째 세션
-                var box = document.createElement("div");
+                var box = document.createElement("li");
+                box.className = "list-group-item"
                 var text = document.createTextNode(attendences[i][6]);
                 box.append(text);
-                document.body.appendChild(box);
+                session_list.appendChild(box);
+                
+                container_body.appendChild(session_list);
+                container.appendChild(container_body);
+                row.appendChild(container);
+
+                if(i%3 == 1){
+                    document.getElementById("main-container").appendChild(row);
+                }
+                
             }
         });
     </script>
