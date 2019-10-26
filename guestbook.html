@@ -12,8 +12,12 @@
     <title>2019DevFest</title>
 </head>
 <body>
-    <div class="container">
-        <h1 class="text-center">DevFest 2019</h1>
+    <div class="container text-center">
+        <button type="button" class="btn btn-light" style="position: absolute; top: 10px; right: 10px;" onclick="location.href='./index.html'">To Home</button>
+
+        <img src="img/DevfestLogo.png" width="50%"  style="margin: 10px auto 2rem auto;" alt="">
+        <h3>🎉 참석한 모든 분들 환영합니다 🎉</h3>
+        <br>
         <div id="main-container" class="container text-center">
         </div>
     </div>
@@ -29,15 +33,16 @@
                     row.className = "row";
                     row.style = "margin: auto;"
                 }
+                var color_list = ['#8cbeff', '#ff3d3d', '#00a32e', '#d4c900']
                 var container = document.createElement("div");
-                container.className = "card col-md-3";
-                container.style = "margin: 15px auto;";
+                container.className = "card col-md-3 col-sm-10 col-10";
+                container.style = "margin: 15px auto; box-shadow: 0px 0px 8px 2px "+ color_list[Math.floor(Math.random() * 4)]+ ";";
 
                 var container_body = document.createElement("div");
                 container_body.className = "card-body";
 
                 //이름
-                var box = document.createElement("h5");
+                var box = document.createElement("h3");
                 box.className = "card-title";
                 var text = document.createTextNode(attendences[i][1]);
                 box.append(text);
@@ -69,6 +74,7 @@
                 //1번째 세션
                 var box = document.createElement("li");
                 box.className = "list-group-item"
+                box.style = "padding: 5px;"
                 var text = document.createTextNode(attendences[i][2]);
                 box.append(text);
                 session_list.appendChild(box);
@@ -76,6 +82,7 @@
                 //2번째 세션
                 var box = document.createElement("li");
                 box.className = "list-group-item"
+                box.style = "padding: 5px;"
                 var text = document.createTextNode(attendences[i][3]);
                 box.append(text);
                 session_list.appendChild(box);
@@ -83,6 +90,7 @@
                 //3번째 세션
                 var box = document.createElement("li");
                 box.className = "list-group-item"
+                box.style = "padding: 5px;"
                 var text = document.createTextNode(attendences[i][4]);
                 box.append(text);
                 session_list.appendChild(box);
@@ -90,6 +98,7 @@
                 //4번째 세션
                 var box = document.createElement("li");
                 box.className = "list-group-item"
+                box.style = "padding: 5px;"
                 var text = document.createTextNode(attendences[i][5]);
                 box.append(text);
                 session_list.appendChild(box);
@@ -97,6 +106,7 @@
                 //5번째 세션
                 var box = document.createElement("li");
                 box.className = "list-group-item"
+                box.style = "padding: 3px;"
                 var text = document.createTextNode(attendences[i][6]);
                 box.append(text);
                 session_list.appendChild(box);
