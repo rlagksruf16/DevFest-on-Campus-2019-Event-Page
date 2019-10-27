@@ -1,7 +1,9 @@
 body {
     font-size: 16px;
 }
-
+img {
+    width: 50%;
+}
 div {
     display: block;
 }
@@ -51,8 +53,8 @@ h1 {
 
 div ._1A_1{
     width: 420px;
-    border-left: 1px solid pink;
-    border-right: 1px solid pink;
+    border-left: 2px solid pink;
+    border-right: 2px solid pink;
     font-size: 18px;
     margin: auto;
     padding: 13px;
@@ -61,7 +63,7 @@ div ._1A_1{
 
 ._1A_1 > span:first-child {
     font-size: 17px;
-    color: blue;
+    color: green;
     font-weight: 600;
 }
 ._1A_1 > span:last-child {
@@ -79,18 +81,38 @@ div ._1A_1{
 .s_content {
     margin-top: 60px;
 }
-
-.s_content > div {
-    width: 256px;
+.s_content > .timeline {
+    width: 100px;
+    display: block;
+    height: 400px;
+    margin: auto;
+    float: left;
+}
+.s_content > ._2A_1 {
+    width: 308px;
     display: block;
     float: left;
     height: 400px;
     margin: auto;
     text-align: center;
+    border-right: 1px solid lightblue;
     
+}
+
+.s_content > ._2A_2 {
+    width: 100px;
+    display: block;
+    float: left;
+    height: 400px;
+    margin: auto;
+    text-align: center;
 }
 
 .header {
     font-size: 28px;
     font-weight: 600;
+}
+
+span > .time_b {
+    margin-top: 30px;
 }
