@@ -28,7 +28,7 @@
             let attendences = data.values;
             let row;
             for(let i=1; i<attendences.length; i++){
-                if(i % 3 == 1){
+                if(i % 3 === 1){
                     row = document.createElement("div");
                     row.className = "row";
                     row.style = "margin: auto;"
@@ -49,7 +49,7 @@
                 //box.style = "display: block; float: left;";
                 //<img src="img/25231.svg" width="30px" height="30px"/>
                 //if(attendences[i][5])
-                if(attendences[i][7] != undefined){
+                if(attendences[i][7] !== undefined){
                     var hyperlink = document.createElement("a");
                     hyperlink.href = attendences[i][7];
                     hyperlink.target = "_blank"
@@ -61,7 +61,7 @@
                 }
                 container_body.appendChild(box);
 
-                if(attendences[i][7] != undefined){
+                if(attendences[i][7] !== undefined){
                     hyperlink.appendChild(img);
                     container_body.appendChild(hyperlink);
                 }
@@ -69,44 +69,43 @@
                 //세션 내용들
                 var session_list = document.createElement("ul");
                 session_list.className = "list-group list-group-flush"
-                session_list.style = ""
 
                 //1번째 세션
                 var box = document.createElement("li");
-                box.className = "list-group-item"
-                box.style = "padding: 5px;"
+                box.className = "list-group-item";
+                box.style = "padding: 5px;";
                 var text = document.createTextNode(attendences[i][2]);
                 box.append(text);
                 session_list.appendChild(box);
 
                 //2번째 세션
                 var box = document.createElement("li");
-                box.className = "list-group-item"
-                box.style = "padding: 5px;"
+                box.className = "list-group-item";
+                box.style = "padding: 5px;";
                 var text = document.createTextNode(attendences[i][3]);
                 box.append(text);
                 session_list.appendChild(box);
 
                 //3번째 세션
                 var box = document.createElement("li");
-                box.className = "list-group-item"
-                box.style = "padding: 5px;"
+                box.className = "list-group-item";
+                box.style = "padding: 5px;";
                 var text = document.createTextNode(attendences[i][4]);
                 box.append(text);
                 session_list.appendChild(box);
 
                 //4번째 세션
                 var box = document.createElement("li");
-                box.className = "list-group-item"
-                box.style = "padding: 5px;"
+                box.className = "list-group-item";
+                box.style = "padding: 5px;";
                 var text = document.createTextNode(attendences[i][5]);
                 box.append(text);
                 session_list.appendChild(box);
 
                 //5번째 세션
                 var box = document.createElement("li");
-                box.className = "list-group-item"
-                box.style = "padding: 3px;"
+                box.className = "list-group-item";
+                box.style = "padding: 3px;";
                 var text = document.createTextNode(attendences[i][6]);
                 box.append(text);
                 session_list.appendChild(box);
@@ -115,7 +114,7 @@
                 container.appendChild(container_body);
                 row.appendChild(container);
 
-                if(i%3 == 1){
+                if(i%3 === 1){
                     document.getElementById("main-container").appendChild(row);
                 }
                 
