@@ -96,6 +96,18 @@ div ._1A_2{
     font-size: 17px;
     font-weight: 600;
     padding-left: 8px;
+    
+}
+._1A_2 > span:first-child {
+    font-size: 17px;
+    color: green;
+    font-weight: 600;
+}
+._1A_2 > span:last-child {
+    font-size: 17px;
+    font-weight: 600;
+    padding-left: 8px;
+    
 }
 ._2A_h {
     margin-bottom: 40px;
@@ -104,7 +116,9 @@ div ._1A_2{
     height: 100px;
     display: table;
     margin: auto;
+    padding: 8px;
     vertical-align: middle;
+    border-top: 0.5px dashed pink;
 }
 .announ {
     text-align: center;
@@ -138,10 +152,9 @@ div ._1A_2{
     width: 306px;
     /* display: block; */
     float: left;
-    height: 600px;
+    height: 700px;
     margin: auto;
     text-align: center;
-    border: 0.5px dashed pink;
 }
 
 .s_content > ._2A_2 {
@@ -160,6 +173,8 @@ div ._1A_2{
 
 
 div.time_b {
-    margin-top: 38px;
+    margin-top: 60px;
     height: 62px;
+    color: green;
+    font-weight: 550;
 }
