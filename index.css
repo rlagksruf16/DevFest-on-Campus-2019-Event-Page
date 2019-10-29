@@ -16,6 +16,10 @@ h3 {
     padding: 0;
 }
 
+.title > h1 {
+    text-align: center;
+}
+
 /* section {
     margin: 47px 0px;
 }
@@ -45,11 +49,12 @@ h3 {
     font-weight:700;
     line-height: 24px;
 } */
-.info {
-    align-items: middle;
+.schdule, .info, .title {
+    margin-top: 60px;
 }
-.schdule, .info {
-    margin-top: 40px;
+
+.title {
+    margin-bottom: 100px;
 }
 h1 {
     font-weight: 600;
@@ -62,8 +67,9 @@ h1 {
 
 div ._1A_1{
     width: 306px;
-    border-left: 2px solid pink;
-    border-bottom: 1px solid lightgrey;
+    border: 2px inset pink;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
     font-size: 18px;
     margin-left: 407px;
     padding: 13px;
@@ -73,7 +79,9 @@ div ._1A_1{
 div ._1A_2{
     width: 306px;
     /* border-bottom: 2px solid pink; */
-    border-right: 2px solid pink;
+    border: 2px outset pink;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
     font-size: 18px;
     margin-left: 407px;
     padding: 13px;
@@ -130,10 +138,10 @@ div ._1A_2{
     width: 306px;
     /* display: block; */
     float: left;
-    height: 700px;
+    height: 600px;
     margin: auto;
     text-align: center;
-    border-right: 1px solid blue;
+    border: 0.5px dashed pink;
 }
 
 .s_content > ._2A_2 {
